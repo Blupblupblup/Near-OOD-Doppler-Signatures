@@ -72,10 +72,9 @@ even when the samples are not concentrated around their dedicated centroid durin
 
 ### Micro-Doppler dataset
 
-This micro-Doppler signatures dataset was generated thanks to a MATLAB simulation, the code of which can be found
-in this other repo (??? ADD URL). Four classes are used to create normal and anomalous modes, each class being defined
-by a helicopter-like target with a specific number of rotating blades, the latter being responsible for specific spectrum
-modulation patterns.
+This micro-Doppler signatures [dataset](https://cloud.mbauw.eu/s/BPtk5HYkyBWAGLo), to be placed in the `data/` directory, was generated thanks to a MATLAB simulation, the code of which can be found
+in this other [repository](https://github.com/Blupblupblup/Doppler-Signatures-Generation). Four classes are used to create normal and anomalous modes, each class being defined
+by a helicopter-like target with a specific number of rotating blades, the latter being responsible for specific spectrum modulation patterns.
 
 *Inter-class diversity:* the number of blades changes across classes, changing the modulation pattern
 
@@ -99,7 +98,8 @@ pulse Doppler radars have few pulses to characterize targets, cf. our paper ADD 
 noise in the samples generating process as well as wider uniform distributions from which to pick the targets parameters like the blade size or blades
 RPMs;
 - adding one or more AD methods to the comparison proposed in our paper (such as AD using an auto-encoder, where the reconstruction error serves as the AD score, as was
-already done here ADD URL or here ADD URL).
+already done [here](https://ieeexplore.ieee.org/abstract/document/9266497) or [here](http://proceedings.mlr.press/v80/ruff18a/ruff18a.pdf));
+- consider several pollution ratios to check whether all Deep AD approaches suffer from it similarly.
 
 ### Requirements
 
