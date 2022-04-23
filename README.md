@@ -103,8 +103,7 @@ already done [here](https://ieeexplore.ieee.org/abstract/document/9266497) or [h
 
 ### Requirements
 
-Create a virtual environment and use the following pip command, it 
-+should at least work with Python 3.7 and 3.8:
+Create a virtual environment and use the following pip command, it should at least work with Python 3.7 and 3.8:
 
 `pip3 install seaborn scikit-learn numpy geomstats tqdm matplotlib scipy pandas torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113`
 
