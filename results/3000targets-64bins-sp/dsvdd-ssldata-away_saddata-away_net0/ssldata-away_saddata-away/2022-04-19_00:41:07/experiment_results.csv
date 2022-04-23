@@ -1,0 +1,3 @@
+,dataset,arch,AD_name,loss_name,supervision,norm_classes,outl_classes,SAD_classes,SAD_ratio,auc_train,auc_valid,auc_test,nbr_modes,AUCepoch,nbr_epochs,lr_init,lr_milestones,batchsize,seed
+0,3000targets-64bins-sp,net0,dsvdd-ssldata-away_saddata-away_net0,ssldata-away_saddata-away,SAD+SSL,[3],"[1, 2, 4]",[1],0.01,0.8999123914037495,0.8985777777777777,0.902,1,47,300,0.0001,[200],1000,0
+1,3000targets-64bins-sp,net0,dsvdd-ssldata-away_saddata-away_net0,ssldata-away_saddata-away,SAD+SSL,[4],"[1, 2, 3]",[1],0.01,0.9692317558299038,0.9560000000000001,0.9636592592592593,1,138,300,0.0001,[200],1000,1
