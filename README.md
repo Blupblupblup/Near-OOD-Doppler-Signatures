@@ -97,8 +97,9 @@ pulse Doppler radars have few pulses to characterize targets, cf. our paper ADD 
 - conducting the same experiments on a similar dataset where samples have higher intra-class diversity, which could be generated thanks to a stronger
 noise in the samples generating process as well as wider uniform distributions from which to pick the targets parameters like the blade size or blades
 RPMs;
-- adding one or more AD methods to the comparison proposed in our paper (such as AD using an auto-encoder, where the reconstruction error serves as the AD score, as was
-already done [here](https://ieeexplore.ieee.org/abstract/document/9266497) or [here](http://proceedings.mlr.press/v80/ruff18a/ruff18a.pdf));
+- adding one or more AD methods to the comparison proposed in our paper (such as deep AD using an auto-encoder, where the reconstruction error serves as the AD score, as was
+already done [here](https://ieeexplore.ieee.org/abstract/document/9266497) or [here](http://proceedings.mlr.press/v80/ruff18a/ruff18a.pdf), or use an auto-encoder to replace the PCA
+for dimensionality reduction before using shallow AD);
 - consider several pollution ratios to check whether all Deep AD approaches suffer from it similarly.
 
 ### Requirements
