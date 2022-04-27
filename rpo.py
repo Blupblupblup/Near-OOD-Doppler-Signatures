@@ -118,8 +118,6 @@ class Random_Projection_Outlyingness_deep_1D_ssl(OutlierMixin):
             Z2 = torch.abs(Z2 - self.m2)
             self.s2 = torch.max(torch.median(Z2, dim=0)[0], torch.ones(torch.median(Z2, dim=0)[0].size()).to(self.device) * 0.0001)  # regularize to avoid coefficients explosion
 
-        print(self.m0.size())
-
     def score_samples(self, X, supervision_cls=0):
         """
         we will only score test samples using not transformed SSL class centroid, the transformed "1" SSL class is only
