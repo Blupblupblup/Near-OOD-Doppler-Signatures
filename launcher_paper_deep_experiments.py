@@ -208,42 +208,42 @@ for nbr_modes in [1, 2]:
     #### SVDD & adaptations
 
     subprocess.run(
-        ["python", current_dir + "deep_svdd.py", "dsvdd-saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_svdd.py", "dsvdd-saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), "SAD", "saddata-pollution", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
+         str(nbr_targets), "SAD", "saddata-contamination", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
     subprocess.run(
-        ["python", current_dir + "deep_svdd.py", "dsvdd-ssldata-sslcentroid_saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_svdd.py", "dsvdd-ssldata-sslcentroid_saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), "SAD+SSL", "ssldata-sslcentroid_saddata-pollution", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
+         str(nbr_targets), "SAD+SSL", "ssldata-sslcentroid_saddata-contamination", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
     subprocess.run(
-        ["python", current_dir + "deep_svdd.py", "dsvdd-ssldata-away_saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_svdd.py", "dsvdd-ssldata-away_saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), "SAD+SSL", "ssldata-away_saddata-pollution", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
+         str(nbr_targets), "SAD+SSL", "ssldata-away_saddata-contamination", arch, str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
     #### MSVDD & adaptations
 
     subprocess.run(
-        ["python", current_dir + "deep_msvdd.py", "dmsvdd-pollution" + arch_suffix, dataset_name, str(nbr_modes),
+        ["python", current_dir + "deep_msvdd.py", "dmsvdd-contamination" + arch_suffix, dataset_name, str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan), str(nbr_targets), "SAD", "deep-msvdd", arch, experiment_name])
 
     subprocess.run(
-        ["python", current_dir + "deep_msvdd.py", "dmsvdd-meanbest-pollution" + arch_suffix, dataset_name, str(nbr_modes),
+        ["python", current_dir + "deep_msvdd.py", "dmsvdd-meanbest-contamination" + arch_suffix, dataset_name, str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan), str(nbr_targets), "SAD", "deep-msvdd-meanbest", arch, experiment_name])
@@ -251,33 +251,33 @@ for nbr_modes in [1, 2]:
     #### RPO & adaptations
 
     subprocess.run(
-        ["python", current_dir + "deep_rpo.py", "drpo-saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_rpo.py", "drpo-saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD", "saddata-pollution", arch,
+         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD", "saddata-contamination", arch,
          str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
     subprocess.run(
-        ["python", current_dir + "deep_rpo.py", "drpo-ssldata-sslcentroid_saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_rpo.py", "drpo-ssldata-sslcentroid_saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD+SSL", "ssldata-sslcentroid_saddata-pollution", arch,
+         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD+SSL", "ssldata-sslcentroid_saddata-contamination", arch,
          str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
     subprocess.run(
-        ["python", current_dir + "deep_rpo.py", "drpo-ssldata-away_saddata-pollution" + arch_suffix,
+        ["python", current_dir + "deep_rpo.py", "drpo-ssldata-away_saddata-contamination" + arch_suffix,
          dataset_name,
          str(nbr_modes),
          str(nbr_epochs), str(batchsize),
          str(lr_init), str(lr_decay), str(lr_milestones), str(weight_decay), str(nbr_seeds), str(train_ratio),
          str(nbr_pulse_per_scan),
-         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD+SSL", "ssldata-away_saddata-pollution", arch,
+         str(nbr_targets), estimator_RPs, str(nbr_RPs), "SAD+SSL", "ssldata-away_saddata-contamination", arch,
          str(nbr_modes_SAD), str(SAD_ratio), experiment_name])
 
 time_elapsed = datetime.now() - start_time
