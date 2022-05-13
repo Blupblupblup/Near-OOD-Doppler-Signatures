@@ -10,14 +10,24 @@
 
 ### General description
 
-This is the github repository for the [preprint](https://cloud.mbauw.eu/s/GRLHfHWikpwTprp) currently under review for publication. The paper presents AD experiments on simulated micro-Doppler radar
+This is the github repository for the [preprint](https://hal.archives-ouvertes.fr/hal-03660033) currently under review for publication. The paper presents AD experiments on simulated micro-Doppler radar
 signatures of helicopter-like targets. This code enables you to launch similar experiments
 to the ones presented in the paper, and more generally to achieve unsupervised and semi-supervised AD (as defined in Lukas Ruff [paper](https://arxiv.org/abs/1906.02694)) experiments
 with deep and non-deep approaches.
 
-If you found this code useful, please consider citing the paper:
+If you found this code useful, please consider citing the [paper](https://hal.archives-ouvertes.fr/hal-03660033/document):
 
-[Near OOD detection for low-resolution radar micro-Doppler signatures](https://cloud.mbauw.eu/s/GRLHfHWikpwTprp) (soon on HAL and arXiv)
+```
+@unpublished{bauw:hal-03660033,
+  TITLE = {{Near out-of-distribution detection for low-resolution radar micro-Doppler signatures}},
+  AUTHOR = {Bauw, Martin and Velasco-Forero, Santiago and Angulo, Jesus and Adnet, Claude and Airiau, Olivier},
+  URL = {https://hal.archives-ouvertes.fr/hal-03660033},
+  NOTE = {working paper or preprint},
+  YEAR = {2022},
+  HAL_ID = {hal-03660033},
+  HAL_VERSION = {v1},
+}
+```
 
 ### Code organisation
 
@@ -93,7 +103,7 @@ and [3D modeling](https://proceedings.neurips.cc/paper/2016/file/1d94108e907bb83
 
 Easy follow-ups to our experiments include:
 - conducting the same experiments on a similar dataset where samples have a lower Doppler resolution, e.g. use 32 Doppler bins instead of 64 (which is a relevant radar experiment, since some
-pulse Doppler radars have few pulses to characterize targets, cf. our [paper](https://cloud.mbauw.eu/s/GRLHfHWikpwTprp));
+pulse Doppler radars have few pulses to characterize targets, cf. our [paper](https://hal.archives-ouvertes.fr/hal-03660033/document));
 - conducting the same experiments on a similar dataset where samples have higher intra-class diversity, which could be generated thanks to a stronger
 noise in the samples generating process as well as wider uniform distributions from which to pick the targets parameters like the blade size or blades
 RPMs;
