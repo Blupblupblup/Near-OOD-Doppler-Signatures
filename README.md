@@ -41,9 +41,9 @@ preliminary comparisons.
 scripts and run experiments accordingly for the number of random seeds chosen.
 
 - `data/` directory in which to put the data files you can download [here](https://cloud.mbauw.eu/s/BPtk5HYkyBWAGLo).
-This data was generated using a simple MATLAB simulation code that can be found on this other repository. You can easily modify
+This data was generated using a simple MATLAB simulation code that can be found on this other [repository](https://github.com/Blupblupblup/Doppler-Signatures-Generation). You can easily modify
 this simulation code to generate a similar dataset with more classes, or increase the intraclass diversity. The data files you should download
-are loaded and preprocessed using the `simulated_radar_dataset` in `utils.py`.
+are loaded and preprocessed using the `simulated_radar_dataset` class in `utils.py`.
 
 ### How to launch an experiment
 
