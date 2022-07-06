@@ -10,10 +10,8 @@
 
 ### General description
 
-This is the github repository for the [preprint](https://arxiv.org/abs/2205.07869) currently under review for publication. The paper presents AD experiments on simulated micro-Doppler radar
-signatures of helicopter-like targets. This code enables you to launch similar experiments
-to the ones presented in the paper, and more generally to achieve unsupervised and semi-supervised AD (as defined in Lukas Ruff [paper](https://arxiv.org/abs/1906.02694)) experiments
-with deep and non-deep approaches.
+This is the github repository for the [ECML PKDD 2022](https://2022.ecmlpkdd.org/) paper "Near out-of-distribution detection for low-resolution radar micro-Doppler signatures". An expanded version is available as [preprint](https://arxiv.org/abs/2205.07869) on arXiv, the conference proceedings edited by Springer Nature being unavailable at the moment. The paper presents AD experiments on simulated micro-Doppler radar signatures of helicopter-like targets. This code enables you to launch similar experiments
+to the ones presented in the paper, and more generally to conduct unsupervised and semi-supervised AD (as defined in Lukas Ruff [paper](https://arxiv.org/abs/1906.02694)) experiments with deep and non-deep approaches.
 
 If you found this code useful, please consider citing the [paper](https://arxiv.org/pdf/2205.07869.pdf):
 
