@@ -67,7 +67,6 @@ def convert_labels(labels, normal_cls):
 def get_train_test_valid(simdata,train_ratio,cls_idx):
     nbr_train = int(train_ratio*simdata.shape[0])
     nbr_val = int((simdata.shape[0]-nbr_train)/2) # take half of the residual samples
-    nbr_test = int(simdata.shape[0]-nbr_train-nbr_val)
     train = simdata[:nbr_train]
     val = simdata[nbr_train:nbr_train+nbr_val]
     test = simdata[nbr_train+nbr_val:]
@@ -220,16 +219,16 @@ def update_radius_DMSVDD(hyperspheres_center, nu, train_loader, net, device):
     net.train()
     return radius
 
-def get_train_test_valid(simdata,train_ratio,cls_idx):
-    nbr_train = int(train_ratio*simdata.shape[0])
-    nbr_val = int((simdata.shape[0]-nbr_train)/2) # take half of the residual samples
-    train = simdata[:nbr_train]
-    val = simdata[nbr_train:nbr_train+nbr_val]
-    test = simdata[nbr_train+nbr_val:]
-    ytrain = torch.ones(train.shape[0])*cls_idx
-    yval = torch.ones(val.shape[0])*cls_idx
-    ytest = torch.ones(test.shape[0])*cls_idx
-    return train,ytrain,val,yval,test,ytest
+# def get_train_test_valid(simdata,train_ratio,cls_idx):
+#     nbr_train = int(train_ratio*simdata.shape[0])
+#     nbr_val = int((simdata.shape[0]-nbr_train)/2) # take half of the residual samples
+#     train = simdata[:nbr_train]
+#     val = simdata[nbr_train:nbr_train+nbr_val]
+#     test = simdata[nbr_train+nbr_val:]
+#     ytrain = torch.ones(train.shape[0])*cls_idx
+#     yval = torch.ones(val.shape[0])*cls_idx
+#     ytest = torch.ones(test.shape[0])*cls_idx
+#     return train,ytrain,val,yval,test,ytest
 
 def min_max_normalize(input_tensor, tensor_min, tensor_max):
     tensor_min_max_normalized = (input_tensor - tensor_min) / (tensor_max - tensor_min)
