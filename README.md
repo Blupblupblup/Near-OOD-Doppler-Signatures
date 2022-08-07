@@ -42,7 +42,7 @@ are loaded and preprocessed using the `simulated_radar_dataset` class in `utils.
 
 ### How to launch an experiment
 
-- A simple example launch script is proposed in `launch_example.py`, the experiments of the published paper can be reproduced using the `launcher_paper_XXX.py` scripts.
+- A simple example launch script is proposed in `launcher_example.py`, the experiments of the published paper can be reproduced using the `launcher_paper_XXX.py` scripts.
 
 - Launchers are divided into several scripts in order to ease the distribution of computations over several GPUs and computing instances. Shallow
 baselines should be computed on a CPU machine with numerous cores, the shallow AD methods being CPU-bound. 
