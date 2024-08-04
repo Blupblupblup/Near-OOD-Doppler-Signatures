@@ -77,7 +77,7 @@ even when the samples are not concentrated around their dedicated centroid durin
 
 ### Micro-Doppler dataset
 
-This micro-Doppler signatures [dataset](https://cloud.mbauw.eu/s/BPtk5HYkyBWAGLo), to be placed in the `data/` directory, was generated thanks to a MATLAB simulation, the code of which can be found
+This micro-Doppler signatures [dataset](https://drive.google.com/file/d/1oykjNhdBn37n1MDJhFas-29984JeKhB2/view?usp=sharing), to be placed in the `data/` directory, was generated thanks to a MATLAB simulation, the code of which can be found
 in this other [repository](https://github.com/Blupblupblup/Doppler-Signatures-Generation). Four classes are used to create normal and anomalous modes, each class being defined
 by a helicopter-like target with a specific number of rotating blades, the latter being responsible for specific spectrum modulation patterns.
 
